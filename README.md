@@ -29,3 +29,5 @@ there are two types of numbers in ruby:
 # GETTING USER INPUTS
 to get the user input we use the #gets method
 we can then store the user input in a variable
+
+# ARRAYS
