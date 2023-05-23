@@ -1,3 +1,10 @@
+# puts 'Hello world'
+# puts "Hello Again"
+# puts 'I like typing this.'
+# puts 'this is fun'
+
+
+
 # optional_parameters.rb
 
 # def greeting(name, options = {})
