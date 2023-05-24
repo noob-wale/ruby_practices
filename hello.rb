@@ -29,27 +29,37 @@
 # puts "is it greater or equal? #{5>= -2}"
 # puts "is it less or equal? #{5 <= -2}"
 
+# VARIABLES AD NAMES
 
-# optional_parameters.rb
+# cars = 100
+# space_in_a_car = 4.0
+# drivers = 30
+# passengers = 90
+# cars_not_driven = cars - drivers
+# cars_driven = drivers
+# carpool_capacity = cars_driven * space_in_a_car
+# average_passengers_per_car = passengers / cars_driven
 
-# def greeting(name, options = {})
-#     if options.empty?
-#       puts "Hi, my name is #{name}"
-#     else
-#       puts "Hi, my name is #{name} and I'm #{options[:age]}" +
-#            " years old and I live in #{options[:city]}."
-#     end
-#   end
-  
-#   loft = {age: 30, city: "kisumu"}
-#   my_name = "wallace"
+# puts "there are #{cars} caars available."
+# puts "there are only #{drivers} drivers available."
+# puts "there will be #{cars_not_driven} empty cars today."
+# puts "we can transport #{carpool_capacity} people today."
+# puts " we have #{passengers} to carpool today."
+# puts "we need to put about #{average_passengers_per_car} in eaach car."
 
-#   greeting("Bob")
-#   greeting("Bob", {age: 62, city: "New York City"})
-#   greeting(my_name, loft)
+# my_name = "jaames wallace"
+# my_age = 31
+# my_height = 74
+# my_weight = 180
+# my_eyes = "bbrown"
+# my_teeth = "white"
+# my_hair = "black"
 
-def my_name
-    'james wallace'
-end
+# puts "lets talk about #{my_name}"
+# puts "Hes #{my_height} inches tall"
+# puts "hes #{my_weight} pouunds heaavy."
+# puts "actually hes not that heavy."
+# puts "Hes got #{my_eyes} eyes and #{my_hair} hair."
+# puts "His teeth are usually #{my_teeth} depending on the coffee." 
 
-puts my_name
+# puts "if i add #{my_age}, #{my_height}, and #{my_weight} I get #{my_age + my_height + my_weight}"
