@@ -63,3 +63,38 @@
 # puts "His teeth are usually #{my_teeth} depending on the coffee." 
 
 # puts "if i add #{my_age}, #{my_height}, and #{my_weight} I get #{my_age + my_height + my_weight}"
+
+# print "How old are you? "
+# age = gets.chomp
+# print "How tall are you? "
+# height = gets.chomp
+# print "How much do you weigh? "
+# weight = gets.chomp
+
+# puts "so youre #{age} old, #{height} tall and #{weight} heavy"
+
+# first, second, third = ARGV
+
+# puts "your first variable is: #{first}"
+# puts "your second variable is: #{second}"
+# puts "your third variable is: #{third}"
+
+# print "whats your faavourinte variable?"
+# my_fav = $stdin.gets.chomp
+
+# puts "ok i like #{my_fav}"
+
+filename = ARGV.first
+
+text = open(filename)
+
+puts "heres your file #{filename}"
+print text.read
+text.close
+
+print "type the filename again: "
+file_again = $stdin.gets.chomp
+
+text_again = open(file_again)
+print text_again.read
+text_again.close
