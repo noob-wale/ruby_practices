@@ -99,37 +99,58 @@
 # print text_again.read
 # text_again.close
 
-filename = ARGV.first
+# filename = ARGV.first
 
-puts " we are going to erase #{filename}"
-puts "if you do not want that, hit command-C."
-puts "if you want that hit RETURN"
+# puts " we are going to erase #{filename}"
+# puts "if you do not want that, hit command-C."
+# puts "if you want that hit RETURN"
 
-$stdin.gets
+# $stdin.gets
 
-puts "opening thw file..."
-target = open(filename, 'w')
+# puts "opening thw file..."
+# target = open(filename, 'w')
 
-puts "truncating the file. Goodbye"
-target.truncate(0)
+# puts "truncating the file. Goodbye"
+# target.truncate(0)
 
-puts "now i m going to ask you for three lines"
+# puts "now i m going to ask you for three lines"
 
-print "line 1: "
-line1 = $stdin.gets.chomp
-print "line 2: "
-line2 = $stdin.gets.chomp
-print "line 3: "
-line3 = $stdin.gets.chomp
+# print "line 1: "
+# line1 = $stdin.gets.chomp
+# print "line 2: "
+# line2 = $stdin.gets.chomp
+# print "line 3: "
+# line3 = $stdin.gets.chomp
 
-puts "i am going to write these to the file."
+# puts "i am going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+# target.write(line1)
+# target.write("\n")
+# target.write(line2)
+# target.write("\n")
+# target.write(line3)
+# target.write("\n")
 
-puts "and finally, we close it"
-target.close
+# puts "and finally, we close it"
+# target.close
+
+# from_file, to_file = ARGV
+
+# puts "copying from#{from_file} to #{to_file}"
+
+# in_file = open(from_file)
+# indata = in_file.read
+
+# puts "the input file is #{indata.length} bytes long"
+
+# puts "does the output file exist? #{File.exist?(to_file)}"
+# puts "ready, hit RETURN to continue, command-C to abort."
+# $stdin.gets
+
+# out_file = open(to_file, 'w')
+# out_file.write(indata)
+
+# puts "alright, all done."
+
+# out_file.close
+# in_file.close
