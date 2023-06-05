@@ -84,17 +84,52 @@
 
 # puts "ok i like #{my_fav}"
 
+# filename = ARGV.first
+
+# text = open(filename)
+
+# puts "heres your file #{filename}"
+# print text.read
+# text.close
+
+# print "type the filename again: "
+# file_again = $stdin.gets.chomp
+
+# text_again = open(file_again)
+# print text_again.read
+# text_again.close
+
 filename = ARGV.first
 
-text = open(filename)
+puts " we are going to erase #{filename}"
+puts "if you do not want that, hit command-C."
+puts "if you want that hit RETURN"
 
-puts "heres your file #{filename}"
-print text.read
-text.close
+$stdin.gets
 
-print "type the filename again: "
-file_again = $stdin.gets.chomp
+puts "opening thw file..."
+target = open(filename, 'w')
 
-text_again = open(file_again)
-print text_again.read
-text_again.close
+puts "truncating the file. Goodbye"
+target.truncate(0)
+
+puts "now i m going to ask you for three lines"
+
+print "line 1: "
+line1 = $stdin.gets.chomp
+print "line 2: "
+line2 = $stdin.gets.chomp
+print "line 3: "
+line3 = $stdin.gets.chomp
+
+puts "i am going to write these to the file."
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+puts "and finally, we close it"
+target.close
